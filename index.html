@@ -8,19 +8,23 @@
     <!-- <link href="https://fonts.googleapis.com/css?family=Bungee+Outline" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> -->
-    <title> Form</title>
+    <title>Boop Beep Form</title>
   </head>
   <body class="m-4">
     <div class="container-fluid">
       <div class="jumbotron text-center form-group">
-        <h1></h1>
-        <p id="banner-text"></p>
+        <h1>Beep Boop Converter</h1>
+        <!-- <p id="banner-text"></p> -->
       </div>
-      <form id="form">
-        <p class="m-3 username">Start Here:</p>
+      <form id="beep-form">
+        <h3 class="m-3 username">Enter a number and let our handy dandy converter work it's magic:</h3>
+        <div id="beepBoopInsert">
+          <input id="userInput" class="form-control " type="text" placeholder="enter number">
+        </div>
+        </br>
         <button type="submit" id="submitButton" class="btn btn-primary form-control btn btn-outline-warning">Submit!</button>
       </form>
-      <div id="output">
+      <div id="output" class="form-group">
       </div>
     </div>
   </body>
