@@ -10,17 +10,20 @@ function beepBoop(number) {
   for (var i=0;i<=numberDigit;i++) {
       // console.log(i);
 
-    if (i === 0) { //true //if it contains a 0
+    if (i.toString().includes("0")) { //true //if it contains a 0
+
       // return numberDigit + "beep";
       // numberDigit = [i].toString().replace(numberDigit[i], "Beep!");
       // numberDigit.replace(numberDigit[i], "Beep!");
-      return "Beep!";
-      debugger;
-      console.log(numberDigit);
+      return numberDigit + "Beep!";
+      return userName;
+      // debugger;
+      // console.log(numberDigit);
      }
 
     }
-  }   beepBoop(20);
+}
+  // }   beepBoop(20);
 
   // if (parseInt(number[i]) === 0) { //true //if it contains a 0
   //   number = number.replace(number[i], "Beep!");
@@ -28,7 +31,7 @@ function beepBoop(number) {
 //       console.log(number);
 //     } else if (parseInt(number[i]) === 1) {
 //       number = number.replace(number[i], "Boop!");
-//     } else if (parseInt(number[i]) === 3) {
+//     } else if (parseInt(number[i]) % 3 == 0) {
 //       number = number.replace(number[i], "I'm sorry, Dave. I'm afraid I can't do that.");
 //       console.log(number);
 //     } return number;
@@ -36,18 +39,18 @@ function beepBoop(number) {
 //   }
 // }
 
-//user interface
-// $(document).ready(function(){
-//   $("form#beep-form").submit(function(event){
-//     event.preventDefault();
-//     debugger;
-//     var userInput = $("#userInput").val();
-//     var userName = $("input#name").val();
-//     var finalOutput = beepBoop(userInput);
-//
-//     $("#userOutput").text(finalOutput);
-//     $(".user-name").text(userName);
-//     $("#output").show();
-//
-//   });
-// });
+// user interface
+$(document).ready(function(){
+  $("form#beep-form").submit(function(event){
+    event.preventDefault();
+    debugger;
+    var userInput = $("#userInput").val();
+    var userName = $("input#name").val();
+    var finalOutput = beepBoop(userInput);
+
+    $("#userOutput").text(finalOutput);
+    $(".user-name").text(userName);
+    $("#output").show();
+
+  });
+});

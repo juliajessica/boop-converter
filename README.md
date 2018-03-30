@@ -15,7 +15,7 @@ This webpage was created to take the skills learned from week three at Epicodus 
 | **Program returns input.** | User input: "1" | Output: "1"|
 | **Program replaces 0 with "Beep!"** | User input: "0" | Output: "Beep!" |
 | **Program replaces 1 with "Boop!"** | User input: "1" | Output: "Boop!" |
-| **Program replaces 3 with "I'm sorry, Dave. I'm afraid I can't do that."** | User input: "3" | Output: "I'm sorry, Dave. I'm afraid I can't do that." |
+| **Program replaces numbers divisible by 3 with "I'm sorry, Dave. I'm afraid I can't do that."** | User input: "3" | Output: "I'm sorry, Dave. I'm afraid I can't do that." |
 | **Program returns a range of numbers from 0 to the chosen number.** | User input: "5" | Output: "Beep!, Boop!, 2, I'm sorry, Dave. I'm afraid I can't do that, 4, 5" |
 | **Program can return input repeatedly** | User 1st input: "1" User 2nd input: "5" | 1st Output: "Beep!, Boop!" 2nd Output: "Beep!, Boop!, 2, I'm sorry, Dave. I'm afraid I can't do that, 4, 5" |
 
