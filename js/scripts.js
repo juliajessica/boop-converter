@@ -1,5 +1,5 @@
 ///backend logic
-
+// var numberArray = number.toString();
 // var numberArray = number.toString();
 // var returnArray = ["Beep!", "Boop!", "Sorry!"];
 
@@ -9,11 +9,16 @@
 function beepBoop(number) {
   var outputNumber = [];
 
+
   for (var i=0;i<=number;i++) {
     console.log(number);
     debugger;
     if (parseInt(number[i]) === 0) { //true //if it contains a 0
       number = number.replace(number[i], "Beep!");
+    } else if (parseInt(number[i]) === 1) {
+      number = number.replace(number[i], "Boop!");
+    } else if (parseInt(number[i]) === 3) {
+      number = number.replace(number[i], "I'm sorry, Dave. I'm afraid I can't do that.");
     } return number;
   }
 }
@@ -27,9 +32,8 @@ $(document).ready(function(){
     var userInput = $("#userInput").val();
     var finalOutput = beepBoop(userInput);
 
-    $("#output").append(finalOutput);
+    $("#output").text(finalOutput);
     $("#output").show();
-
 
   });
 });
