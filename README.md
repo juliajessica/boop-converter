@@ -1,4 +1,4 @@
-# Roman Numeral Converter
+# Roman Numeral Converter ..................
 
 #### A program that allows users to .................. 3/30/2018
 
@@ -6,7 +6,7 @@
 
 ## Description
 
-This webpage was created to take the skills learned from week three at Epicodus and put them into practice. In this space I will be implementing for loops, strings, arrays, methods, seperating backend and front end logic and recording a BDD spec sheet.
+This webpage was created to take the skills learned from week three at Epicodus and put them into practice. In this space I will be implementing for loops, strings, arrays, methods, separating backend and frontend logic and recording a BDD spec sheet.
 
 
 ### Specs
