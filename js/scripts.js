@@ -4,25 +4,28 @@
 // var one = "1"
 // var three = "3"
 
-number = 30;
+
+
+// var numberArray = number.toString();
+// var returnArray = ["Beep!", "Boop!", "Sorry!"];
+
+// var convertToNumber = parseInt(numberArray[i]); //now number
+
+
+
+number = 0;
 function beepboop(number) {
-  var numberArray = number.toString();
-  var returnNumber = '';
-  debugger;
-  console.log(numberArray);
 
-  for(i=0;i<=numberArray.length;i++) {
-    var position = parseInt(numberArray);
-    console.log(position);
-    if(position.includes("0");) { //true
-      var position = returnNumber
-      return (returnNumber[i] + "Beep!");
-    }
+  var returnNumber = [];
+
+  for (var i=0;i<=number.length;i++) {
+
+    console.log(number);
+    debugger;
+    if (number[i] === 0) { //true //if it contains a 0
+      number = number.replace(number[i], "Beep!");
+    } return number;
   }
-
-  // for(i)
-
-  // return number;
 }
 
 
