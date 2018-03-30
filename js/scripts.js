@@ -7,10 +7,10 @@ function beepBoop(number) {
   var outputNumber = [];
   var numberDigit = parseInt(number);
   debugger;
-  for (var i=0;i<=numberDigit;i++) {
+  for (var i=0;i<=numberDigit.length;i++) {
       // console.log(i);
 
-    if (i.toString().includes("0")) { //true //if it contains a 0
+    if ( < 1 ) { //true //if it contains a 0
 
       // return numberDigit + "beep";
       // numberDigit = [i].toString().replace(numberDigit[i], "Beep!");
