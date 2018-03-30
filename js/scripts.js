@@ -10,6 +10,7 @@ function beepBoop(number) {
   var outputNumber = [];
 
 
+
   for (var i=0;i<=number;i++) {
     console.log(number);
     debugger;
@@ -20,6 +21,7 @@ function beepBoop(number) {
     } else if (parseInt(number[i]) === 3) {
       number = number.replace(number[i], "I'm sorry, Dave. I'm afraid I can't do that.");
     } return number;
+    return userName;
   }
 }
 
@@ -30,9 +32,11 @@ $(document).ready(function(){
     event.preventDefault();
     debugger;
     var userInput = $("#userInput").val();
+    var userName = $("input#name").val();
     var finalOutput = beepBoop(userInput);
 
     $("#userOutput").text(finalOutput);
+    $(".user-name").text(userName);
     $("#output").show();
 
   });
