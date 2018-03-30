@@ -22,7 +22,7 @@ function beepboop(number) {
 
     console.log(number);
     debugger;
-    if (number[i] === 0) { //true //if it contains a 0
+    if (parseInt(number[i]) === 0) { //true //if it contains a 0
       number = number.replace(number[i], "Beep!");
     } return number;
   }
