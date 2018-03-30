@@ -1,3 +1,26 @@
+body {
+  background-color: #d7d8cb;
+}
+
+h1 {
+  font-family: 'Limelight', cursive;
+  font-size: 60px;
+}
+
+.jumbotron {
+  background-color: #a9ad8f;
+}
+
 #output {
   display: none;
+}
+
+.card {
+  background-color: #a9ad8f;
+}
+
+
+.card-title {
+  font-family: 'Limelight', cursive;
+  font-size: 40px;
 }
