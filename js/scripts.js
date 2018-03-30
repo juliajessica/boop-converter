@@ -12,8 +12,9 @@ function beepboop(number) {
   console.log(numberArray);
 
   for(i=0;i<=numberArray.length;i++) {
-    var position = parseInt(numberArray[i]);
-    if(position.includes("0")) { //true
+    var position = parseInt(numberArray);
+    console.log(position);
+    if(position.includes("0");) { //true
       var position = returnNumber
       return (returnNumber[i] + "Beep!");
     }
