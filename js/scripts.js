@@ -3,26 +3,50 @@
 
 // var convertToNumber = parseInt(numberArray[i]); //now number
 
-function beepBoop(number) {
+
+
+
+function beepBoop(userInput) {
+  var numberDigit = userInput.toString();
+  // var numberDigit = parseInt(userInput);
   var outputNumber = [];
-  var numberDigit = parseInt(number);
-  debugger;
+
   for (var i=0;i<=numberDigit.length;i++) {
-      // console.log(i);
 
-    if ( < 1 ) { //true //if it contains a 0
 
-      // return numberDigit + "beep";
-      // numberDigit = [i].toString().replace(numberDigit[i], "Beep!");
-      // numberDigit.replace(numberDigit[i], "Beep!");
-      return numberDigit + "Beep!";
-      return userName;
-      // debugger;
-      // console.log(numberDigit);
-     }
-
+    if (numberDigit[i] === 0) { //true //if it contains a 0
+      numberDigit = numberDigit.replace(numberDigit[i], "Beep!");
+      // outputNumber.push("Beep!");
+      numberDigit.push("Beep!");
+      debugger;
     }
-}
+  }
+} beepBoop(20);
+//////////////////////////////
+// function beepBoop(userInput) {
+//   var numberDigit = userInput.toString();
+//   var outputNumber = [];
+//
+//   for (var i=0;i<=numberDigit.length;i++) {
+//     var numberDigit = parseInt(userInput);
+//
+//     if (numberDigit[i] === 0) { //true //if it contains a 0
+//     //   number = number.replace(number[i], "Beep!");
+//     //   debugger; }
+//
+//       // return numberDigit + "beep";
+//       // numberDigit = [i].toString().replace(numberDigit[i], "Beep!");
+//       // numberDigit.replace(numberDigit[i], "Beep!");
+//       outputNumber.push("Beep!");
+//       return userName;
+//       // debugger;
+//       // console.log(numberDigit);
+//      }
+//
+//     }
+// }
+
+/////////////////////////////
   // }   beepBoop(20);
 
   // if (parseInt(number[i]) === 0) { //true //if it contains a 0
@@ -44,6 +68,7 @@ $(document).ready(function(){
   $("form#beep-form").submit(function(event){
     event.preventDefault();
     debugger;
+
     var userInput = $("#userInput").val();
     var userName = $("input#name").val();
     var finalOutput = beepBoop(userInput);
