@@ -32,7 +32,7 @@ $(document).ready(function(){
     var userInput = $("#userInput").val();
     var finalOutput = beepBoop(userInput);
 
-    $("#output").text(finalOutput);
+    $("#userOutput").text(finalOutput);
     $("#output").show();
 
   });
