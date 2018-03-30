@@ -26,27 +26,31 @@
 //////////////////////////////
 function beepBoop(number) {
 
-  var numberDigit = number.toString();
+  // var numberString = number.toString();
   var outputNumber = [];
+  debugger;
+  console.log(number);
 
-  for (var i=0;i<=numberDigit.length;i++) {
-    // var numberDigit = parseInt(numberDigit);
-    debugger;
-    console.log(numberDigit);
+  for (var i=0;i<=number;i++) {
+    // var number = parseInt(number);
+    if (i === 0) {
+      return "Beep!";
+    } else if (i === 1) {
+      return "Boop!"
+    } else if (i % 3 == 0){
+      return "I'm sorry, Dave. I'm afraid I can't do that!"
+    }
 
-    if (numberDigit[i] === 0) {
-      numberDigit.replace(numberDigit[i], "Beep!");  // number = number.replace(number[i], "Beep!");
-      }  else if (number[i] === 1) {
-        numberDigit.replace(numberDigit[i], "Boop!");
-      } else if (numberDigit[i] % 3 == 0) {
-        numberDigit.replace(numberDigit[i], "I'm sorry, Dave. I'm afraid I can't do that.");
-      }
-      // } else {
-      //   return numberDigit;
-      // }
+    // }  else if ([i] === 1) {
+    //     number.replace(number[i], "Boop!");
+    //   } else if ([i] % 3 == 0) {
+    //     number.replace(number[i], "I'm sorry, Dave. I'm afraid I can't do that.");
+    //   }
+    //
   }
-  // numberDigit.push("Beep!");
-  return numberDigit;
+
+
+  return number;
   return userName;
 }
       // return numberDigit + "beep";   // numberDigit = [i].toString().replace(numberDigit[i], "Beep!");
@@ -62,18 +66,18 @@ function beepBoop(number) {
 
 
 // user interface
-// $(document).ready(function(){
-//   $("form#beep-form").submit(function(event){
-//     event.preventDefault();
-//     debugger;
-//
-//     var userName = $("input#name").val();
-//     var userInput = $("#userInput").val();
-//     var finalOutput = beepBoop(userInput);
-//
-//     $("#userOutput").text(finalOutput);
-//     $(".user-name").text(userName);
-//     $("#output").show();
-//
-//   });
-// });
+$(document).ready(function(){
+  $("form#beep-form").submit(function(event){
+    event.preventDefault();
+    debugger;
+
+    var userName = $("input#name").val();
+    var userInput = parseInt($("#userInput").val());
+    var finalOutput = beepBoop(userInput);
+
+    $("#userOutput").text(finalOutput);
+    $(".user-name").text(userName);
+    $("#output").show();
+
+  });
+});
