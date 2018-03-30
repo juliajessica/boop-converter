@@ -1,25 +1,15 @@
 ///backend logic
 
-// var zero = "0"
-// var one = "1"
-// var three = "3"
-
-
-
 // var numberArray = number.toString();
 // var returnArray = ["Beep!", "Boop!", "Sorry!"];
 
 // var convertToNumber = parseInt(numberArray[i]); //now number
 
+// number = 0;
+function beepBoop(number) {
+  var outputNumber = [];
 
-
-number = 0;
-function beepboop(number) {
-
-  var returnNumber = [];
-
-  for (var i=0;i<=number.length;i++) {
-
+  for (var i=0;i<=number;i++) {
     console.log(number);
     debugger;
     if (parseInt(number[i]) === 0) { //true //if it contains a 0
@@ -29,8 +19,17 @@ function beepboop(number) {
 }
 
 
-///user interface
+//user interface
+$(document).ready(function(){
+  $("form#beep-form").submit(function(event){
+    event.preventDefault();
+    debugger;
+    var userInput = $("#userInput").val();
+    var finalOutput = beepBoop(userInput);
+
+    $("#output").append(finalOutput);
+    $("#output").show();
 
 
-
-// $(".output").show();
+  });
+});
