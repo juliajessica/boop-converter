@@ -1,20 +1,27 @@
 ///backend logic
-var numberArray = [];
-var zero = "Beep!"
-var one = "Boop!"
-var three = "I'm sorry, Dave. I'm afraid I can't do that."
-var numberToString = numberArray.toString();
 
+// var zero = "0"
+// var one = "1"
+// var three = "3"
+
+number = 30;
 function beepboop(number) {
-  for(i=0;i<=number.length;i++) {
-    if(number === zero) {
-      return numberArray + "Beep!";
+  var numberArray = number.toString();
+  var returnNumber = '';
+  debugger;
+  console.log(numberArray);
+
+  for(i=0;i<=numberArray.length;i++) {
+    var position = parseInt(numberArray[i]);
+    if(position.includes("0")) { //true
+      var position = returnNumber
+      return (returnNumber[i] + "Beep!");
     }
   }
 
   // for(i)
 
-  return number;
+  // return number;
 }
 
 
