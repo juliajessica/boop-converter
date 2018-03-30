@@ -6,7 +6,7 @@
 
 ## Description
 
-A website created ..................
+This webpage was created to take the skills learned from week three at Epicodus and put them into practice. In this space I will be implementing for loops, strings, arrays, methods, seperating backend and front end logic and recording a BDD spec sheet.
 
 
 ### Specs
