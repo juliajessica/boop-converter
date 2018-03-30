@@ -13,12 +13,12 @@ This webpage was created to take the skills learned from week three at Epicodus 
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
 | **Program returns input.** | User input: "1" | Output: "1"|
-| **Program returns value for input requiring one roman numeral symbol.** | User input: "1" | Output: "I"|
-| **Program returns second value for input requiring two of the same roman numeral symbols.** | User input: "2" | Output: "II"|
-| **Program returns third value for input requiring three of the same roman numeral symbols.** | User Input: "3" | Output: "III" |
-| **Program returns value for input requiring two different roman numeral symbols.**| Input: "4" | Output: "IV" |
-| **Program returns value for input requiring three different roman numeral symbols.**| Input: "14" | Output: "XIV" |
-| **Program returns value for input of any three digit number using more than one roman numeral symbol.**| Input: "110" | Output: "CX" |
+| **Program replaces 0 with "Beep!"** | User input: "0" | Output: "Beep!" |
+| **Program replaces 1 with "Boop!"** | User input: "1" | Output: "Boop!" |
+| **Program replaces 3 with "I'm sorry, Dave. I'm afraid I can't do that."** | User input: "3" | Output: "I'm sorry, Dave. I'm afraid I can't do that." |
+| **Program returns a range of numbers from 0 to the chosen number.** | User input: "5" | Output: "Boop!, Beep!, I'm sorry, Dave. I'm afraid I can't do that, 4, 5" |
+
+
 
 
 
