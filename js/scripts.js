@@ -22,12 +22,12 @@ function beepBoop(number) {
 
   for (var i=0;i<=number;i++) {
     // var i = number.toString();
-    if (i === 0) {
-      outputNumber.push(" Beep!");
+    if (i % 3 == 0 && i !== 0){
+      outputNumber.push(" I'm sorry, Dave. I'm afraid I can't do that!");
     } else if (i === 1) {
       outputNumber.push(" Boop!");
-    } else if (i % 3 == 0){
-      outputNumber.push(" I'm sorry, Dave. I'm afraid I can't do that!");
+    } else if (i === 0) {
+      outputNumber.push(" Beep!");
     } else {
       outputNumber.push(' ' + i);
     }
