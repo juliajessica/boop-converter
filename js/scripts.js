@@ -11,6 +11,7 @@ $(document).ready(function(){
     $("#userOutput").text(finalOutput);
     $(".user-name").text(userName);
     $("#output").show();
+    $("#beep-form")[0].reset();
 
   });
 });
@@ -20,6 +21,7 @@ function beepBoop(number) {
   var outputNumber = [];
 
   for (var i=0;i<=number;i++) {
+    // var i = number.toString();
     if (i === 0) {
       outputNumber.push(" Beep!");
     } else if (i === 1) {
